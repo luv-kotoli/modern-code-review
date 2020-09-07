@@ -36,7 +36,7 @@ int main(){
 		cin >> i >> j;
 		char inputnum = true;
 		while (inputnum) {
-			if (game[i][j] != 'X' && game[i][j] != 'O'&& i<=2 && j<=2) {
+			if (game[i][j] != 'X' && game[i][j] != 'O'&& i>= 0 &&i<=2 &&j>=0&& j<=2) {
 				inputnum = false;
 				break;
 			}
@@ -60,6 +60,6 @@ int main(){
 	cout << game[0][0] << " " << game[0][1] << " " << game[0][2] << endl;
 	cout << game[1][0] << " " << game[1][1] << " " << game[1][2] << endl;
 	cout << game[2][0] << " " << game[2][1] << " " << game[2][2] << endl;
-	//return 1;
+	return 1;
 
 }
